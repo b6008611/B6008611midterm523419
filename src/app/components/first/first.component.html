@@ -55,13 +55,19 @@
                             </div>
                         </div>
                         <div class="row" style="padding: 5px;">
-                            <div class="col-lg-2"><i class="fa fa-address-book" aria-hidden="true"></i> Address: {{profile.address}}</div>
+                            
+                            <div class="col-lg-2"><i class="fa fa-address-book" aria-hidden="true"></i> Address: <button type="button" (click)="onUserClick($event)"
+                                class="btn btn-primary btn-lg btn-block">Show Address</button>
+                            </div>
                             <div class="col-lg-10 text-left">
                                 
                             </div>
                         </div>
                         <div class="row" style="padding: 5px;">
-                            <div class="col-lg-2"><i class="fa fa-address-book" aria-hidden="true"></i> Comment: {{profile.comment}}</div>
+                            <div class="col-lg-2"><i class="fa fa-address-book" aria-hidden="true"></i> Comment: <div class="form-group">
+                                <textarea [(ngModel)]="profile.comment" class="form-control" rows="5" id="profile.comment"></textarea><br/>
+                                <label for="profile.comment">Comment: {{profile.comment}}</label>
+                            </div></div>
                             <div class="col-lg-10 text-left">
                                 
                             </div>

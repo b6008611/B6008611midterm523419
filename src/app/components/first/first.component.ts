@@ -38,6 +38,9 @@ export class FirstComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  onUserClick($e){
+  	alert('SUT 111 University Avenue, Suranaree Sub-Distric, Muang Nakhon Ratchasima Distric, Nakhon Ratchasima 30000 Thailand');
+  }
 
 
 }
